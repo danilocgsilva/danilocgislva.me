@@ -1,0 +1,113 @@
+
+@font-face {
+    font-family: 'DosisLocal';
+    font-style: normal;
+    src: url('dosis/v1_7/Dosis-Medium.ttf');
+    src: local('@'),
+        url('dosis/v1_7/Dosis-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+img {
+    top: 0;
+    animation-name: move;
+    animation-duration: 4s;
+    padding: 40px;
+}
+
+
+@keyframes move {
+    from {
+        padding-left: 0;
+        padding-top: 0;
+    }
+
+    to {
+        padding-left: 40px;
+        padding-top: 40px;
+    }
+}
+
+body, a {
+    background-color: #333333;
+    color: #7CFCC4;
+    font-family: DosisLocal;
+}
+
+h1 {
+    font-size: 42px;
+    margin: 0;
+}
+
+.astronauta {
+    width: 205px;
+    height: 205px;
+}
+
+.astronauta_container {
+    height: 267px;
+}
+
+.container {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    display: none;
+}
+
+.content {
+    margin: 0 auto;
+    min-width: 100px;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    -ms-transform: translate(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+ul {
+    margin-top: 0;
+    display: inline-block;
+    text-align: left;
+    list-style-type: none;
+}
+
+ul a {
+    text-decoration: none;
+}
+
+ul li.icon {
+    background-repeat: no-repeat;
+    background-position: 0 2px;
+    background-size: 18px;
+    padding-left: 25px;
+}
+
+ul li.mail {
+    background-image: url(icons/mail.png);
+}
+
+ul li.linkedin {
+    background-image: url(icons/linkedin.png);
+}
+
+ul li.instagram {
+    background-image: url(icons/instagram.png);
+}
+
+ul li.github {
+    background-image: url(icons/github.png);
+}
+
+ul li.stackoverflow {
+    background-image: url(icons/stackoverflow.png);
+}
+
+ul li.meetup {
+    background-image: url(icons/meetup.png);
+}
